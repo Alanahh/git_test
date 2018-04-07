@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Forms</title>
+</head>
+<body>
+	
+	<form action="/"  class="mainform">
+		<h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h1>
+		<p>Lorem ipsum dolor sit amet, consectetur.<span>*</span>
+		<fieldset>
+			<legend>Контактная информация</legend>
+			<p>
+			
+				<label for name="name">Name<span>*</span></label>
+				<input type="text" name="name" id="name" required>
+			</p>
+			<p>
+				<label for name="phone">Number</label>
+				<input type="tel" name="phone" id="phone">
+			</p>
+			<p>
+			<label for name="email">Email<span>*</span></label>
+			<input type="email" name="email" id="email" required>
+			</p>
+
+		</fieldset>
+	</form>
+
+	<style>
+		.mainform span{
+		color:red;
+		}
+		label{
+			width: 150px;
+			display: inline-block;
+		}
+		input[type="text"],
+		input[type="email"],
+		input[type="tel"]{
+			width: 400px;
+		}
+
+	</style>
+
+</body>
+</html>	
